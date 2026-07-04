@@ -189,21 +189,6 @@ Bạn sẽ có thể:
 
 ---
 
-## 📞 HỖ TRỢ
-
-Nếu gặp vấn đề trong quá trình học:
-- 🐛 Tạo Issue trên GitHub
-- 💬 Hỏi trong Facebook Group
-- 📧 Email: [your-email@example.com]
-
----
-
 **Chúc bạn học tốt và thành công! 🎉**
 
 *"Manual testing tells you what's wrong. Automation testing tells you what's wrong faster."*
-
----
-
-**License**: MIT  
-**Author**: Manual Testing Course Team  
-**Last Updated**: 2024
