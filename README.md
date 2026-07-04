@@ -28,7 +28,7 @@ Khóa học này dành cho những ai đã:
 ### **Module 2: Selenium WebDriver Core** (6 phần)
 
 | # | Tiêu đề | Nội dung chính | Thời lượng |
-|---|---------|----------------|-----------|-|
+|---|---------|----------------|------------|
 | 04 | **Selenium Introduction & Setup** | Selenium là gì? Architecture. Setup project. First test | 1 ngày |
 | 05 | **Locators - 8 Strategies** | ID, Name, ClassName, TagName, LinkText, PartialLinkText, CSS, XPath | 2 ngày |
 | 06 | **CSS Selector Deep Dive** | Basic CSS. Attributes. Combinators. Pseudo-classes. Practice | 2 ngày |
@@ -41,7 +41,7 @@ Khóa học này dành cho những ai đã:
 ### **Module 3: Selenium Advanced** (5 phần)
 
 | # | Tiêu đề | Nội dung chính | Thời lượng |
-|---|---------|----------------|-----------|-|
+|---|---------|----------------|------------|
 | 10 | **Handling Complex UI** | Dropdowns (Select). Checkboxes. Radio buttons | 2 ngày |
 | 11 | **Alerts, Frames & Windows** | Alert handling. Switch frames. Multiple windows | 2 ngày |
 | 12 | **Actions Class** | Mouse: hover, click, drag. Keyboard: sendKeys, keyDown | 2 ngày |
@@ -53,7 +53,7 @@ Khóa học này dành cho những ai đã:
 ### **Module 4: TestNG Framework** (4 phần)
 
 | # | Tiêu đề | Nội dung chính | Thời lượng |
-|---|---------|----------------|-----------|-|
+|---|---------|----------------|------------|
 | 15 | **TestNG Basics** | Annotations. Lifecycle. testng.xml | 2 ngày |
 | 16 | **TestNG Annotations Deep Dive** | @Parameters. @DataProvider. Test attributes | 2 ngày |
 | 17 | **TestNG Advanced** | Groups. Parallel execution. Dependencies. Assertions | 2 ngày |
@@ -64,7 +64,7 @@ Khóa học này dành cho những ai đã:
 ### **Module 5: Framework Design** (3 phần)
 
 | # | Tiêu đề | Nội dung chính | Thời lượng |
-|---|---------|----------------|-----------|-|
+|---|---------|----------------|------------|
 | 19 | **Page Object Model (POM)** | Structure. Page classes. @FindBy. PageFactory | 3 ngày |
 | 20 | **Data-Driven Testing** | Excel (Apache POI). CSV. JSON. Properties file | 2 ngày |
 | 21 | **Framework Utilities** | Base class. Config reader. Excel reader. Wait utility | 2 ngày |
@@ -74,7 +74,7 @@ Khóa học này dành cho những ai đã:
 ### **Module 6: Reporting & Logging** (2 phần)
 
 | # | Tiêu đề | Nội dung chính | Thời lượng |
-|---|---------|----------------|-----------|-|
+|---|---------|----------------|------------|
 | 22 | **Log4j - Logging** | Setup. log4j2.xml. Logger levels. Best practices | 1 ngày |
 | 23 | **Reporting** | ExtentReports. Allure Reports. HTML reports | 2 ngày |
 
@@ -83,7 +83,7 @@ Khóa học này dành cho những ai đã:
 ### **Module 7: CI/CD & Best Practices** (2 phần)
 
 | # | Tiêu đề | Nội dung chính | Thời lượng |
-|---|---------|----------------|-----------|-|
+|---|---------|----------------|------------|
 | 24 | **Jenkins - CI/CD** | Install. Create job. Run tests. Pipeline | 2 ngày |
 | 25 | **Best Practices & Career** | Code organization. DRY. Interview prep | 1 ngày |
 
