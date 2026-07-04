@@ -26,16 +26,13 @@
 ### Tại sao OOP quan trọng trong Automation?
 
 ```mermaid
-graph LR
+graph TD
     A[OOP trong Automation]
     
-    A --> B[Class<br/>LoginPage.java<br/>DashboardPage.java]
-    
-    A --> C[Object<br/>loginPage = new LoginPage()]
-    
-    A --> D[Inheritance<br/>BasePage → LoginPage]
-    
-    A --> E[Encapsulation<br/>private WebDriver]
+    A --> B[Class: LoginPage.java, DashboardPage.java]
+    A --> C[Object: loginPage = new LoginPage]
+    A --> D[Inheritance: BasePage extends LoginPage]
+    A --> E[Encapsulation: private WebDriver]
     
     style A fill:#C4612F,color:#fff
     style B fill:#F2E3D6
@@ -105,11 +102,11 @@ loginPage.login("test@example.com", "Test@123");
 
 ```mermaid
 graph TD
-    A[BasePage<br/>Common methods]
+    A[BasePage, Common methods]
     
-    A --> B[LoginPage<br/>Login specific]
-    A --> C[DashboardPage<br/>Dashboard specific]
-    A --> D[ProductPage<br/>Product specific]
+    A --> B[LoginPage, Login specific]
+    A --> C[DashboardPage, Dashboard specific]
+    A --> D[ProductPage, Product specific]
     
     style A fill:#C4612F,color:#fff
     style B fill:#F2E3D6
@@ -315,11 +312,11 @@ user.setPassword("NewPassword@123");
 graph TD
     A[Collection Interface]
     
-    A --> B[List Interface<br/>Ordered, Allow duplicates]
-    A --> C[Set Interface<br/>Unordered, No duplicates]
-    A --> D[Queue Interface<br/>FIFO]
+    A --> B[List Interface, Ordered, Allow duplicates]
+    A --> C[Set Interface, Unordered, No duplicates]
+    A --> D[Queue Interface, FIFO]
     
-    B --> E[ArrayList<br/>★ Most used]
+    B --> E[ArrayList, ★ Most used]
     B --> F[LinkedList]
     
     C --> G[HashSet]
@@ -327,7 +324,7 @@ graph TD
     
     D --> I[PriorityQueue]
     
-    J[Map Interface<br/>Key-Value pairs] --> K[HashMap<br/>★ Most used]
+    J[Map Interface, Key-Value pairs] --> K[HashMap, ★ Most used]
     J --> L[TreeMap]
     
     style A fill:#C4612F,color:#fff
@@ -505,9 +502,9 @@ System.out.println("Unique links: " + uniqueLinks.size());
 
 | Feature | ArrayList | HashSet | HashMap |
 |---------|-----------|---------|---------|
-| **Duplicates** | ✅ Allow | ❌ No duplicates | Keys: ❌<br/>Values: ✅ |
+| **Duplicates** | ✅ Allow | ❌ No duplicates | Keys: ❌, Values: ✅ |
 | **Order** | ✅ Ordered (insertion order) | ❌ Unordered | ❌ Unordered |
-| **Null values** | ✅ Allow multiple | ✅ Allow one null | Key: 1 null<br/>Value: Multiple |
+| **Null values** | ✅ Allow multiple | ✅ Allow one null | Key: 1 null, Value: Multiple |
 | **Access** | By index: `get(0)` | Loop only | By key: `get("key")` |
 | **Use case** | List of items | Unique items | Key-value pairs |
 
@@ -523,18 +520,18 @@ System.out.println("Unique links: " + uniqueLinks.size());
 graph TD
     A[Throwable]
     
-    A --> B[Error<br/>Hệ thống: OutOfMemoryError<br/>Không handle được]
+    A --> B[Error, Hệ thống: OutOfMemoryError, Không handle được]
     
     A --> C[Exception]
     
-    C --> D[Checked Exception<br/>Phải handle: IOException<br/>FileNotFoundException]
+    C --> D[Checked Exception, Phải handle: IOException, FileNotFoundException]
     
-    C --> E[Unchecked Exception<br/>RuntimeException<br/>Không bắt buộc handle]
+    C --> E[Unchecked Exception, RuntimeException, Không bắt buộc handle]
     
     E --> F[NullPointerException]
     E --> G[ArithmeticException]
     E --> H[ArrayIndexOutOfBoundsException]
-    E --> I[NoSuchElementException<br/>★ Selenium hay gặp]
+    E --> I[NoSuchElementException, ★ Selenium hay gặp]
     
     style A fill:#C4612F,color:#fff
     style I fill:#FF6B6B,color:#fff

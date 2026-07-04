@@ -26,11 +26,11 @@
 graph LR
     A[Selenium WebDriver]
     
-    A --> B[Viết code<br/>Java, Python...]
+    A --> B[Viết code, Java, Python...]
     
-    B --> C[Điều khiển browser<br/>Chrome, Firefox...]
+    B --> C[Điều khiển browser, Chrome, Firefox...]
     
-    C --> D[Tự động test<br/>website/web app]
+    C --> D[Tự động test, website/web app]
     
     style A fill:#C4612F,color:#fff
     style D fill:#90EE90
@@ -95,11 +95,11 @@ graph TD
     A --> C[Selenium WebDriver]
     A --> D[Selenium Grid]
     
-    B --> E[Chrome/Firefox Extension<br/>Record & Playback<br/>Cho beginners<br/>⚠️ Không dùng real projects]
+    B --> E[Chrome/Firefox Extension, Record & Playback, Cho beginners, ⚠️ Không dùng real projects]
     
-    C --> F[API để viết code<br/>Java, Python, C#, JS<br/>★ FOCUS CỦA KHÓA HỌC ★<br/>✅ Production-ready]
+    C --> F[API để viết code, Java, Python, C#, JS, ★ FOCUS CỦA KHÓA HỌC ★, ✅ Production-ready]
     
-    D --> G[Distributed testing<br/>Run parallel<br/>Multiple machines/browsers<br/>✅ Advanced scaling]
+    D --> G[Distributed testing, Run parallel, Multiple machines/browsers, ✅ Advanced scaling]
     
     style A fill:#C4612F,color:#fff
     style C fill:#90EE90
@@ -155,12 +155,12 @@ graph TD
 **Architecture**:
 ```mermaid
 graph TD
-    A[Hub<br/>Central server]
+    A[Hub, Central server]
     
-    A --> B[Node 1<br/>Chrome Windows]
-    A --> C[Node 2<br/>Firefox Mac]
-    A --> D[Node 3<br/>Safari Mac]
-    A --> E[Node 4<br/>Edge Windows]
+    A --> B[Node 1, Chrome Windows]
+    A --> C[Node 2, Firefox Mac]
+    A --> D[Node 3, Safari Mac]
+    A --> E[Node 4, Edge Windows]
     
     F[Your Tests] --> A
     
@@ -183,16 +183,16 @@ graph TD
 
 ```mermaid
 graph LR
-    A[1. Your Test Code<br/>Java/Python<br/>test.java]
+    A[1. Your Test Code, Java/Python, test.java]
     
-    B[2. Selenium WebDriver API<br/>Language Bindings<br/>selenium-java.jar]
+    B[2. Selenium WebDriver API, Language Bindings, selenium-java.jar]
     
-    C[3. Browser Driver<br/>ChromeDriver<br/>geckodriver<br/>edgedriver]
+    C[3. Browser Driver, ChromeDriver, geckodriver, edgedriver]
     
-    D[4. Browser<br/>Chrome<br/>Firefox<br/>Edge]
+    D[4. Browser, Chrome, Firefox, Edge]
     
     A -->|Commands| B
-    B -->|JSON Wire Protocol<br/>W3C WebDriver Protocol| C
+    B -->|JSON Wire Protocol, W3C WebDriver Protocol| C
     C -->|Native commands| D
     D -->|Response| C
     C -->|JSON| B
@@ -283,15 +283,15 @@ sequenceDiagram
 graph TD
     A[Selenium WebDriver]
     
-    A --> B[Chrome ⭐⭐⭐⭐⭐<br/>Most popular<br/>ChromeDriver]
+    A --> B[Chrome ⭐⭐⭐⭐⭐, Most popular, ChromeDriver]
     
-    A --> C[Firefox ⭐⭐⭐⭐<br/>Second popular<br/>geckodriver]
+    A --> C[Firefox ⭐⭐⭐⭐, Second popular, geckodriver]
     
-    A --> D[Edge ⭐⭐⭐<br/>Windows default<br/>EdgeDriver]
+    A --> D[Edge ⭐⭐⭐, Windows default, EdgeDriver]
     
-    A --> E[Safari ⭐⭐<br/>Mac/iOS only<br/>safaridriver]
+    A --> E[Safari ⭐⭐, Mac/iOS only, safaridriver]
     
-    A --> F[Opera ⭐<br/>Less common<br/>operadriver]
+    A --> F[Opera ⭐, Less common, operadriver]
     
     style A fill:#C4612F,color:#fff
     style B fill:#90EE90
@@ -449,7 +449,7 @@ Page title: Google
 ```mermaid
 graph TD
     A[WebDriver driver = new ChromeDriver]
-    A --> B[Launch Chrome browser<br/>Selenium 4.6+ tự download driver]
+    A --> B[Launch Chrome browser, Selenium 4.6+ tự download driver]
     
     B --> C[driver.get URL]
     C --> D[Navigate to website]
@@ -460,7 +460,7 @@ graph TD
     F --> G[Verify]
     
     G --> H[driver.quit]
-    H --> I[Close browser<br/>Clean up]
+    H --> I[Close browser, Clean up]
     
     style A fill:#C4612F,color:#fff
     style I fill:#90EE90
@@ -590,10 +590,10 @@ graph TD
     A[Browser có 3 tabs open]
     
     A --> B[driver.close]
-    B --> C[Chỉ đóng current tab<br/>2 tabs còn lại vẫn mở]
+    B --> C[Chỉ đóng current tab, 2 tabs còn lại vẫn mở]
     
     A --> D[driver.quit]
-    D --> E[Đóng TẤT CẢ tabs<br/>Cleanup WebDriver session]
+    D --> E[Đóng TẤT CẢ tabs, Cleanup WebDriver session]
     
     style B fill:#F2E3D6
     style D fill:#C4612F,color:#fff

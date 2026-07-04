@@ -80,11 +80,11 @@ graph TD
     A[findElement]
     B[findElements]
     
-    A --> C[Return: WebElement<br/>1 element duy nhất]
-    A --> D[Không tìm thấy:<br/>❌ NoSuchElementException]
+    A --> C[Return: WebElement, 1 element duy nhất]
+    A --> D[Không tìm thấy:, ❌ NoSuchElementException]
     
-    B --> E[Return: List WebElement<br/>Có thể 0, 1, hoặc nhiều elements]
-    B --> F[Không tìm thấy:<br/>✅ Return empty list size=0<br/>KHÔNG throw exception]
+    B --> E[Return: List WebElement, Có thể 0, 1, hoặc nhiều elements]
+    B --> F[Không tìm thấy:, ✅ Return empty list size=0, KHÔNG throw exception]
     
     style A fill:#C4612F,color:#fff
     style B fill:#90EE90
@@ -120,14 +120,14 @@ if (!links.isEmpty()) {
 graph TD
     A[8 Locator Strategies]
     
-    A --> B[1. ID ⭐⭐⭐⭐⭐<br/>Best]
+    A --> B[1. ID ⭐⭐⭐⭐⭐, Best]
     A --> C[2. Name ⭐⭐⭐⭐]
     A --> D[3. ClassName ⭐⭐⭐]
     A --> E[4. TagName ⭐⭐]
     A --> F[5. LinkText ⭐⭐⭐]
     A --> G[6. PartialLinkText ⭐⭐⭐]
-    A --> H[7. CSS Selector ⭐⭐⭐⭐⭐<br/>Powerful]
-    A --> I[8. XPath ⭐⭐⭐⭐⭐<br/>Most Powerful]
+    A --> H[7. CSS Selector ⭐⭐⭐⭐⭐, Powerful]
+    A --> I[8. XPath ⭐⭐⭐⭐⭐, Most Powerful]
     
     style B fill:#90EE90
     style H fill:#90EE90
@@ -275,11 +275,11 @@ WebElement errorMsg = driver.findElement(By.className("error-message"));
 graph TD
     A[Element: class='btn btn-primary']
     
-    A --> B[✅ ĐÚNG<br/>By.className 'btn-primary']
-    A --> C[✅ ĐÚNG<br/>By.className 'btn']
-    A --> D[❌ SAI<br/>By.className 'btn btn-primary']
+    A --> B[✅ ĐÚNG, By.className 'btn-primary']
+    A --> C[✅ ĐÚNG, By.className 'btn']
+    A --> D[❌ SAI, By.className 'btn btn-primary']
     
-    D --> E[InvalidSelectorException<br/>Compound class names not permitted]
+    D --> E[InvalidSelectorException, Compound class names not permitted]
     
     style B fill:#90EE90
     style C fill:#90EE90
@@ -489,12 +489,12 @@ graph TD
     A --> B[LinkText]
     A --> C[PartialLinkText]
     
-    B --> D[✅ 'Click here to Login'<br/>Exact match only]
-    B --> E[❌ 'Login'<br/>Not found]
+    B --> D[✅ 'Click here to Login', Exact match only]
+    B --> E[❌ 'Login', Not found]
     
-    C --> F[✅ 'Click here to Login'<br/>Full match OK]
-    C --> G[✅ 'Login'<br/>Partial match OK]
-    C --> H[✅ 'Click here'<br/>Partial match OK]
+    C --> F[✅ 'Click here to Login', Full match OK]
+    C --> G[✅ 'Login', Partial match OK]
+    C --> H[✅ 'Click here', Partial match OK]
     
     style B fill:#F2E3D6
     style C fill:#90EE90
@@ -580,19 +580,19 @@ driver.findElement(By.xpath("//label[text()='Email']/following-sibling::input"))
 graph TD
     A[Chọn Locator]
     
-    A --> B[1. ID ⭐⭐⭐⭐⭐<br/>Nếu có ID stable]
+    A --> B[1. ID ⭐⭐⭐⭐⭐, Nếu có ID stable]
     
-    B --> C[2. Name ⭐⭐⭐⭐<br/>Nếu Name unique]
+    B --> C[2. Name ⭐⭐⭐⭐, Nếu Name unique]
     
-    C --> D[3. CSS Selector ⭐⭐⭐⭐⭐<br/>Flexible, powerful]
+    C --> D[3. CSS Selector ⭐⭐⭐⭐⭐, Flexible, powerful]
     
-    D --> E[4. XPath ⭐⭐⭐⭐⭐<br/>Khi CSS không đủ]
+    D --> E[4. XPath ⭐⭐⭐⭐⭐, Khi CSS không đủ]
     
-    E --> F[5. LinkText/PartialLinkText ⭐⭐⭐<br/>Chỉ cho links]
+    E --> F[5. LinkText/PartialLinkText ⭐⭐⭐, Chỉ cho links]
     
-    F --> G[6. ClassName ⭐⭐<br/>Nếu unique]
+    F --> G[6. ClassName ⭐⭐, Nếu unique]
     
-    G --> H[7. TagName ⭐<br/>Quá generic, ít dùng]
+    G --> H[7. TagName ⭐, Quá generic, ít dùng]
     
     style B fill:#90EE90
     style D fill:#90EE90

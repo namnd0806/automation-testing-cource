@@ -25,16 +25,16 @@
 ```mermaid
 graph TD
     A[❌ Không có Maven]
-    A --> B[Download manual .jar files<br/>selenium-java.jar<br/>testng.jar<br/>...hàng chục files]
-    A --> C[Copy vào project<br/>Tốn thời gian]
-    A --> D[Version conflict<br/>Selenium 3.x vs 4.x?]
-    A --> E[Update khó<br/>Delete cũ, download mới]
+    A --> B[Download manual .jar files, selenium-java.jar, testng.jar, ...hàng chục files]
+    A --> C[Copy vào project, Tốn thời gian]
+    A --> D[Version conflict, Selenium 3.x vs 4.x?]
+    A --> E[Update khó, Delete cũ, download mới]
     
     F[✅ Có Maven]
-    F --> G[Khai báo trong pom.xml<br/>3 dòng code]
-    F --> H[Maven tự download<br/>Tự động]
-    F --> I[Maven quản lý versions<br/>Không conflict]
-    F --> J[Update dễ<br/>Đổi version number]
+    F --> G[Khai báo trong pom.xml, 3 dòng code]
+    F --> H[Maven tự download, Tự động]
+    F --> I[Maven quản lý versions, Không conflict]
+    F --> J[Update dễ, Đổi version number]
     
     style A fill:#FF6B6B,color:#fff
     style F fill:#90EE90
@@ -110,17 +110,17 @@ my-selenium-project/
 graph TD
     A[Maven Project]
     
-    A --> B[src/main/java<br/>Page Objects<br/>Utilities]
+    A --> B[src/main/java, Page Objects, Utilities]
     
-    A --> C[src/test/java<br/>Test Cases]
+    A --> C[src/test/java, Test Cases]
     
-    A --> D[src/main/resources<br/>config.properties<br/>log4j2.xml]
+    A --> D[src/main/resources, config.properties, log4j2.xml]
     
-    A --> E[src/test/resources<br/>testng.xml]
+    A --> E[src/test/resources, testng.xml]
     
-    A --> F[pom.xml<br/>★ Dependencies ★<br/>★ Plugins ★]
+    A --> F[pom.xml, ★ Dependencies ★, ★ Plugins ★]
     
-    A --> G[target/<br/>Auto-generated<br/>Don't touch!]
+    A --> G[target/, Auto-generated, Don't touch!]
     
     style F fill:#C4612F,color:#fff
     style B fill:#F2E3D6
@@ -191,11 +191,11 @@ graph TD
 graph LR
     A[Maven Coordinates]
     
-    A --> B[groupId<br/>com.example<br/>Company/Organization]
+    A --> B[groupId, com.example, Company/Organization]
     
-    A --> C[artifactId<br/>selenium-automation<br/>Project name]
+    A --> C[artifactId, selenium-automation, Project name]
     
-    A --> D[version<br/>1.0-SNAPSHOT<br/>Project version]
+    A --> D[version, 1.0-SNAPSHOT, Project version]
     
     style A fill:#C4612F,color:#fff
 ```
@@ -337,11 +337,11 @@ graph LR
 
 ```mermaid
 graph TD
-    A[Bạn khai báo:<br/>selenium-java]
+    A[Bạn khai báo:, selenium-java]
     
-    A --> B[Maven tự download:<br/>selenium-api]
-    A --> C[Maven tự download:<br/>selenium-chrome-driver]
-    A --> D[Maven tự download:<br/>selenium-firefox-driver]
+    A --> B[Maven tự download:, selenium-api]
+    A --> C[Maven tự download:, selenium-chrome-driver]
+    A --> D[Maven tự download:, selenium-firefox-driver]
     
     B --> E[byte-buddy]
     C --> F[netty]
@@ -387,7 +387,7 @@ graph LR
 |-------|-------|--------|
 | **validate** | Validate project structure | - |
 | **compile** | Compile source code (src/main/java) | target/classes/ |
-| **test** | Run unit tests (src/test/java) | target/test-classes/<br/>target/surefire-reports/ |
+| **test** | Run unit tests (src/test/java) | target/test-classes/, target/surefire-reports/ |
 | **package** | Đóng gói thành JAR/WAR | target/project-name.jar |
 | **verify** | Run integration tests, verify | - |
 | **install** | Install vào local repository | ~/.m2/repository/ |
@@ -399,7 +399,7 @@ graph LR
 
 ```mermaid
 graph LR
-    A[mvn clean] --> B[Delete target/<br/>Remove compiled files]
+    A[mvn clean] --> B[Delete target/, Remove compiled files]
     
     style A fill:#FF6B6B,color:#fff
     style B fill:#F2E3D6
@@ -649,13 +649,13 @@ touch pom.xml
 
 ```mermaid
 graph LR
-    A[Your pom.xml<br/>declares dependency]
+    A[Your pom.xml, declares dependency]
     
-    A --> B[Maven checks<br/>Local Repository<br/>~/.m2/]
+    A --> B[Maven checks, Local Repository, ~/.m2/]
     
-    B -->|Not found| C[Download from<br/>Maven Central]
+    B -->|Not found| C[Download from, Maven Central]
     
-    C --> D[Save to<br/>Local Repository]
+    C --> D[Save to, Local Repository]
     
     B -->|Found| E[Use cached version]
     

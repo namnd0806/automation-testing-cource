@@ -24,8 +24,8 @@
 
 ```mermaid
 graph LR
-    A[Manual Testing] -->|Tester làm thủ công| B[Mở browser<br/>Click buttons<br/>Nhập data<br/>Verify results]
-    C[Automation Testing] -->|Script tự động| D[Selenium code<br/>Tự động mở browser<br/>Tự động click<br/>Tự động verify]
+    A[Manual Testing] -->|Tester làm thủ công| B[Mở browser, Click buttons, Nhập data, Verify results]
+    C[Automation Testing] -->|Script tự động| D[Selenium code, Tự động mở browser, Tự động click, Tự động verify]
     
     style A fill:#FF6B6B,color:#fff
     style C fill:#90EE90
@@ -89,12 +89,12 @@ public void testLogin() {
 ```mermaid
 graph TD
     A[Automation Testing]
-    A --> B[⚡ Tốc độ<br/>Nhanh gấp 100x]
-    A --> C[🎯 Chính xác<br/>Không human error]
-    A --> D[🔄 Reusable<br/>Chạy lại nhiều lần]
-    A --> E[💰 Tiết kiệm<br/>Dài hạn rẻ hơn]
-    A --> F[🌙 24/7<br/>Chạy ban đêm]
-    A --> G[📊 Coverage<br/>Test nhiều hơn]
+    A --> B[⚡ Tốc độ, Nhanh gấp 100x]
+    A --> C[🎯 Chính xác, Không human error]
+    A --> D[🔄 Reusable, Chạy lại nhiều lần]
+    A --> E[💰 Tiết kiệm, Dài hạn rẻ hơn]
+    A --> F[🌙 24/7, Chạy ban đêm]
+    A --> G[📊 Coverage, Test nhiều hơn]
     
     style A fill:#C4612F,color:#fff
     style B fill:#F2E3D6
@@ -436,9 +436,9 @@ ROI = (25,950,000 / 11,625,000) × 100%
 
 ```mermaid
 graph LR
-    A[Tháng 0] -->|Initial: 9.4M| B[Tháng 1-3<br/>Chưa lời]
-    B -->|Break-even| C[Tháng 4<br/>Bắt đầu lời]
-    C --> D[Tháng 12<br/>Lời 26M]
+    A[Tháng 0] -->|Initial: 9.4M| B[Tháng 1-3, Chưa lời]
+    B -->|Break-even| C[Tháng 4, Bắt đầu lời]
+    C --> D[Tháng 12, Lời 26M]
     
     style A fill:#FF6B6B,color:#fff
     style C fill:#F2E3D6
@@ -459,11 +459,11 @@ graph LR
 graph TD
     A[🔺 Test Automation Pyramid]
     
-    A --> B[UI Tests: 10%<br/>Selenium, Playwright, Cypress<br/>Chậm, đắt, dễ flaky]
+    A --> B[UI Tests: 10%, Selenium, Playwright, Cypress, Chậm, đắt, dễ flaky]
     
-    A --> C[API Tests: 20%<br/>RestAssured, Postman<br/>Nhanh hơn UI, ổn định]
+    A --> C[API Tests: 20%, RestAssured, Postman, Nhanh hơn UI, ổn định]
     
-    A --> D[Unit Tests: 70%<br/>JUnit, TestNG<br/>Rất nhanh, rất rẻ, rất ổn định]
+    A --> D[Unit Tests: 70%, JUnit, TestNG, Rất nhanh, rất rẻ, rất ổn định]
     
     D --> C --> B
     
@@ -478,9 +478,9 @@ graph TD
 
 | Level | % | Đặc điểm | Execution Time | Cost | Stability | Example |
 |-------|---|----------|----------------|------|-----------|---------|
-| **UI Tests** | 10% | - Test qua browser<br/>- Chậm nhất<br/>- Dễ break khi UI đổi | Minutes | Cao | Thấp (flaky) | Selenium click Login |
-| **API Tests** | 20% | - Test backend APIs<br/>- Nhanh hơn UI<br/>- Không phụ thuộc UI | Seconds | Trung bình | Cao | POST /api/login |
-| **Unit Tests** | 70% | - Test functions riêng lẻ<br/>- Rất nhanh<br/>- Không cần browser | Milliseconds | Thấp | Rất cao | assertEquals(add(2,3), 5) |
+| **UI Tests** | 10% | - Test qua browser, - Chậm nhất, - Dễ break khi UI đổi | Minutes | Cao | Thấp (flaky) | Selenium click Login |
+| **API Tests** | 20% | - Test backend APIs, - Nhanh hơn UI, - Không phụ thuộc UI | Seconds | Trung bình | Cao | POST /api/login |
+| **Unit Tests** | 70% | - Test functions riêng lẻ, - Rất nhanh, - Không cần browser | Milliseconds | Thấp | Rất cao | assertEquals(add(2,3), 5) |
 
 ---
 
@@ -492,9 +492,9 @@ graph TD
 graph TD
     A[❌ Ice Cream Cone - Anti-pattern]
     
-    A --> B[UI Tests: 70%<br/>Quá nhiều UI tests]
+    A --> B[UI Tests: 70%, Quá nhiều UI tests]
     A --> C[API Tests: 20%]
-    A --> D[Unit Tests: 10%<br/>Quá ít unit tests]
+    A --> D[Unit Tests: 10%, Quá ít unit tests]
     
     B --> C --> D
     
@@ -516,9 +516,9 @@ graph TD
 graph TD
     A[✅ Test Pyramid - Best Practice]
     
-    A --> D[Unit Tests: 70%<br/>Fast, cheap, stable]
-    A --> C[API Tests: 20%<br/>Medium speed & cost]
-    A --> B[UI Tests: 10%<br/>Slow, expensive, critical paths only]
+    A --> D[Unit Tests: 70%, Fast, cheap, stable]
+    A --> C[API Tests: 20%, Medium speed & cost]
+    A --> B[UI Tests: 10%, Slow, expensive, critical paths only]
     
     D --> C --> B
     
@@ -571,11 +571,11 @@ graph TD
     A --> C[Selenium WebDriver]
     A --> D[Selenium Grid]
     
-    B --> E[Record & Playback<br/>Chrome/Firefox extension<br/>Cho beginners]
+    B --> E[Record & Playback, Chrome/Firefox extension, Cho beginners]
     
-    C --> F[API để viết code automation<br/>Java, Python, C#, JavaScript<br/>★ Most Popular ★]
+    C --> F[API để viết code automation, Java, Python, C#, JavaScript, ★ Most Popular ★]
     
-    D --> G[Run tests parallel<br/>Multiple browsers/machines<br/>Cho advanced users]
+    D --> G[Run tests parallel, Multiple browsers/machines, Cho advanced users]
     
     style A fill:#C4612F,color:#fff
     style C fill:#90EE90
@@ -593,13 +593,13 @@ graph TD
 
 ```mermaid
 graph LR
-    A[Your Test Script<br/>Java code<br/>test.java]
+    A[Your Test Script, Java code, test.java]
     
-    B[Selenium WebDriver<br/>Java library<br/>selenium-java.jar]
+    B[Selenium WebDriver, Java library, selenium-java.jar]
     
-    C[Browser Driver<br/>ChromeDriver<br/>geckodriver]
+    C[Browser Driver, ChromeDriver, geckodriver]
     
-    D[Browser<br/>Chrome<br/>Firefox]
+    D[Browser, Chrome, Firefox]
     
     A -->|1. Commands| B
     B -->|2. JSON Wire Protocol| C
@@ -658,13 +658,13 @@ graph LR
 graph TD
     A[Automation Challenges]
     
-    A --> B[1. Flaky Tests<br/>Đôi khi pass, đôi khi fail]
-    A --> C[2. Maintenance<br/>UI đổi → scripts break]
-    A --> D[3. Dynamic Elements<br/>IDs thay đổi]
-    A --> E[4. Slow Execution<br/>Chạy lâu]
-    A --> F[5. Initial Cost<br/>Setup tốn thời gian]
-    A --> G[6. Skills Required<br/>Cần biết code]
-    A --> H[7. False Confidence<br/>Nghĩ test hết rồi]
+    A --> B[1. Flaky Tests, Đôi khi pass, đôi khi fail]
+    A --> C[2. Maintenance, UI đổi → scripts break]
+    A --> D[3. Dynamic Elements, IDs thay đổi]
+    A --> E[4. Slow Execution, Chạy lâu]
+    A --> F[5. Initial Cost, Setup tốn thời gian]
+    A --> G[6. Skills Required, Cần biết code]
+    A --> H[7. False Confidence, Nghĩ test hết rồi]
     
     style A fill:#C4612F,color:#fff
 ```
@@ -675,13 +675,13 @@ graph TD
 
 | Challenge | Mô tả | Solution |
 |-----------|-------|----------|
-| **Flaky Tests** | Tests không consistent<br/>Lúc pass lúc fail | - Sử dụng **Explicit Waits**<br/>- Stable locators<br/>- Retry mechanism |
-| **Maintenance** | UI thay đổi → scripts break<br/>Tốn thời gian fix | - **Page Object Model**<br/>- Modular code<br/>- Reusable methods |
-| **Dynamic Elements** | ID/class thay đổi mỗi lần load | - Smart XPath/CSS<br/>- Relative locators<br/>- Không dùng absolute paths |
-| **Slow Execution** | UI tests chạy chậm | - **Parallel execution**<br/>- Headless mode<br/>- Grid setup |
-| **Initial Cost** | Viết scripts tốn thời gian | - Start small, prove ROI<br/>- Focus critical tests<br/>- Incremental approach |
-| **Skills Gap** | Team cần biết code | - Training<br/>- Hire experienced<br/>- Pair programming |
-| **False Confidence** | Automation ≠ test hết | - Combine manual + automation<br/>- Exploratory testing<br/>- Code reviews |
+| **Flaky Tests** | Tests không consistent, Lúc pass lúc fail | - Sử dụng **Explicit Waits**, - Stable locators, - Retry mechanism |
+| **Maintenance** | UI thay đổi → scripts break, Tốn thời gian fix | - **Page Object Model**, - Modular code, - Reusable methods |
+| **Dynamic Elements** | ID/class thay đổi mỗi lần load | - Smart XPath/CSS, - Relative locators, - Không dùng absolute paths |
+| **Slow Execution** | UI tests chạy chậm | - **Parallel execution**, - Headless mode, - Grid setup |
+| **Initial Cost** | Viết scripts tốn thời gian | - Start small, prove ROI, - Focus critical tests, - Incremental approach |
+| **Skills Gap** | Team cần biết code | - Training, - Hire experienced, - Pair programming |
+| **False Confidence** | Automation ≠ test hết | - Combine manual + automation, - Exploratory testing, - Code reviews |
 
 ---
 
